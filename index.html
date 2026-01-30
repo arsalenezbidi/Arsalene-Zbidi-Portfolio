@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsalene Zbidi - AI Engineer & Researcher</title>
+    <meta name="description"
+        content="Arsalene Zbidi - AI Engineer & PhD Researcher specializing in agentic AI systems, multi-agent architectures, and production ML. Expert in LangChain, RAG, and enterprise AI solutions.">
+    <meta name="keywords"
+        content="AI Engineer, Agentic AI Systems, Multi-Agent Systems, Machine Learning Engineer, RAG Systems, LangGraph Development, Cybersecurity AI, Tunis AI Developer">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <img src="favicon.png" alt="Logo" class="nav-logo-img">
+                <span class="logo-text-full">Arsalene Zbidi Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for Work</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name" id="typing-text">Arsalene Zbidi<span class="typing-cursor">|</span></span>
+                </h1>
+                <p class="hero-subtitle">AI Engineer & Researcher</p>
+                <p class="hero-description">
+                    PhD researcher specializing in agentic AI systems and production ML,
+                    crafting intelligent solutions that transform businesses
+                </p>
+                <p class="hero-expertise">
+                    Expertise in multi-agent systems, NLP, computer vision, and enterprise AI
+                    solutions for telecommunications and cybersecurity. Combining cutting-edge
+                    research with real-world production deployments.
+                </p>
+                <div class="hero-contact">
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Tunis, Tunisia</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <a href="tel:+21690431500">+216 90 431 500</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:zarsalene@gmail.com">zarsalene@gmail.com</a>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-placeholder">
+                        <img src="arsalene%20.jpeg" alt="Arsalene Zbidi" class="profile-image">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <span>🤖 AI Expert</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span>🎓 PhD Researcher</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span>⚡ Production ML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">70%</div>
+                <div class="stat-label">Efficiency Improvement</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">Technical proficiency across AI, ML, and modern development ecosystems
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🤖</div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">LangChain</div>
+                        <div class="skill-tag">LangGraph</div>
+                        <div class="skill-tag">TensorFlow</div>
+                        <div class="skill-tag">PyTorch</div>
+                        <div class="skill-tag">Multi-Agent Systems</div>
+                        <div class="skill-tag">RAG Systems</div>
+                        <div class="skill-tag">NLP</div>
+                        <div class="skill-tag">Computer Vision</div>
+                        <div class="skill-tag">YOLOv8</div>
+                        <div class="skill-tag">OpenCV</div>
+                        <div class="skill-tag">MCP</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3>Development & Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Java</div>
+                        <div class="skill-tag">PHP</div>
+                        <div class="skill-tag">FastAPI</div>
+                        <div class="skill-tag">Symfony</div>
+                        <div class="skill-tag">Angular</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🗄️</div>
+                        <h3>Databases & Storage</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">PostgreSQL</div>
+                        <div class="skill-tag">MongoDB</div>
+                        <div class="skill-tag">Elasticsearch</div>
+                        <div class="skill-tag">Redis</div>
+                        <div class="skill-tag">FalkorDB</div>
+                        <div class="skill-tag">Qdrant</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">⚙️</div>
+                        <h3>DevOps & Infrastructure</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Docker</div>
+                        <div class="skill-tag">Kubernetes</div>
+                        <div class="skill-tag">GitLab CI</div>
+                        <div class="skill-tag">Jenkins</div>
+                        <div class="skill-tag">ArgoCD</div>
+                        <div class="skill-tag">Prometheus</div>
+                        <div class="skill-tag">Grafana</div>
+                        <div class="skill-tag">SonarQube</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌍</div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Arabic (Native)</div>
+                        <div class="skill-tag">English (Fluent)</div>
+                        <div class="skill-tag">French (Fluent)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-description">Building intelligent systems that drive real business impact</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>AI Engineer & Solution Architect</h3>
+                                <p class="company">Artificial Insight</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="location">📍 Tunis, Tunisia</span>
+                                <span class="period">Oct 2024 – Present</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="achievements">
+                                <li>
+                                    <strong>PowerSale AI Platform:</strong> Architected enterprise-grade platform
+                                    processing <strong>10TB+ telecom data daily</strong>, enabling real-time analytics
+                                    and insights
+                                </li>
+                                <li>
+                                    <strong>Telco GPT:</strong> Developed multi-agent system reducing analyst workload
+                                    by <strong>70%</strong> using LangGraph orchestration for autonomous data analysis
+                                </li>
+                                <li>
+                                    <strong>KFF RAG System:</strong> Engineered multi-tenant platform for Kuwait Fire
+                                    Force
+                                    <ul>
+                                        <li>Digitized <strong>1,000+ pages</strong> of critical training manuals</li>
+                                        <li>Hybrid search architecture combining Qdrant semantic + Elasticsearch keyword
+                                            search</li>
+                                        <li>Multi-modal OCR (DeepSeek, Tesseract) achieving high accuracy on Arabic text
+                                        </li>
+                                        <li>Context-aware retrieval using FalkorDB graph memory</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>MeetingMind AI:</strong> Built intelligent pipeline for executive
+                                    decision-making
+                                    <ul>
+                                        <li>Real-time multilingual speech-to-text transcription</li>
+                                        <li>Automated summary generation from meeting audio</li>
+                                        <li>Natural TTS audio reports for leadership teams</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Developed modular backend achieving <strong>sub-second query performance</strong>
+                                    with PostgreSQL + Redis caching, hybrid chunking strategies, deployed with Llama 3.2
+                                    70B and GPT-OSS 20B
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-badge">LangChain</span>
+                                <span class="tech-badge">LangGraph</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Redis</span>
+                                <span class="tech-badge">Elasticsearch</span>
+                                <span class="tech-badge">Qdrant</span>
+                                <span class="tech-badge">FalkorDB</span>
+                                <span class="tech-badge">YOLOv8</span>
+                                <span class="tech-badge">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Machine Learning Engineer Intern</h3>
+                                <p class="company">Artificial Insight</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="location">📍 Tunis, Tunisia</span>
+                                <span class="period">Feb 2024 – Sep 2024</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="achievements">
+                                <li>Delivered end-to-end vehicle recognition system reducing manual verification by
+                                    <strong>80%</strong>
+                                </li>
+                                <li>Trained YOLOv8 models on <strong>10,000+ annotated images</strong> achieving
+                                    <strong>95%+ detection accuracy</strong> at 30+ FPS
+                                </li>
+                                <li>Built OCR pipeline achieving <strong>92% accuracy</strong> in license plate
+                                    recognition</li>
+                                <li>Implemented SORT tracking algorithm reducing false positives by <strong>65%</strong>
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-badge">YOLOv8</span>
+                                <span class="tech-badge">OpenCV</span>
+                                <span class="tech-badge">EasyOCR</span>
+                                <span class="tech-badge">TensorFlow</span>
+                                <span class="tech-badge">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DevOps Engineer Intern</h3>
+                                <p class="company">Polina Group Holding</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="location">📍 Tunis, Tunisia</span>
+                                <span class="period">Jan 2021 – Jun 2021</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="achievements">
+                                <li>Spearheaded CI/CD transformation reducing deployment time by <strong>60%</strong>
+                                </li>
+                                <li>Established comprehensive monitoring framework improving system reliability by
+                                    <strong>45%</strong>
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-badge">GitLab CI</span>
+                                <span class="tech-badge">Jenkins</span>
+                                <span class="tech-badge">ArgoCD</span>
+                                <span class="tech-badge">Kubernetes</span>
+                                <span class="tech-badge">Grafana</span>
+                                <span class="tech-badge">Prometheus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Innovative AI solutions solving complex real-world challenges</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <div class="project-content">
+                        <h3>Multi-Agent Conversational AI</h3>
+                        <p class="project-description">
+                            Specialized agent architecture for autonomous task decomposition and
+                            collaborative problem-solving in production environments
+                        </p>
+                        <div class="project-features">
+                            <span class="feature">✓ Autonomous task decomposition</span>
+                            <span class="feature">✓ Collaborative multi-agent workflows</span>
+                            <span class="feature">✓ Production-ready deployment</span>
+                        </div>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Enhanced decision-making efficiency in complex workflows
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">LangGraph</span>
+                            <span class="tech-badge">MCP</span>
+                            <span class="tech-badge">Ollama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <div class="project-content">
+                        <h3>PowerSale AI Platform</h3>
+                        <p class="project-description">
+                            Enterprise-grade AI platform for telecom data analysis and insights,
+                            processing massive datasets in real-time
+                        </p>
+                        <div class="project-features">
+                            <span class="feature">✓ Processes 10TB+ daily data</span>
+                            <span class="feature">✓ Multi-agent orchestration</span>
+                            <span class="feature">✓ Sub-second query performance</span>
+                        </div>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> 70% reduction in analyst workload
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">LangChain</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔍</div>
+                    <div class="project-content">
+                        <h3>KFF RAG System</h3>
+                        <p class="project-description">
+                            Multi-tenant agentic platform digitizing fire safety training materials
+                            with advanced hybrid search capabilities
+                        </p>
+                        <div class="project-features">
+                            <span class="feature">✓ Hybrid semantic + keyword search</span>
+                            <span class="feature">✓ Multi-modal OCR for Arabic text</span>
+                            <span class="feature">✓ Graph-based memory context</span>
+                        </div>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Digitized 1,000+ pages of critical documentation
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Qdrant</span>
+                            <span class="tech-badge">Elasticsearch</span>
+                            <span class="tech-badge">FalkorDB</span>
+                            <span class="tech-badge">DeepSeek</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🎯</div>
+                    <div class="project-content">
+                        <h3>ML Recommendation Engine</h3>
+                        <p class="project-description">
+                            Advanced clustering algorithm for behavioral analysis and personalized
+                            user experiences at scale
+                        </p>
+                        <div class="project-features">
+                            <span class="feature">✓ Behavioral clustering algorithms</span>
+                            <span class="feature">✓ Real-time recommendations</span>
+                            <span class="feature">✓ Scalable architecture</span>
+                        </div>
+                        <div class="project-impact">
+                            <strong>Impact:</strong> Increased user engagement by 35%
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Research</h2>
+                <p class="section-description">Academic foundation in AI, cybersecurity, and data science</p>
+            </div>
+
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3>PhD in Computer Science</h3>
+                        <p class="education-focus">Cybersecurity & AI</p>
+                        <p class="education-institution">Higher School of Communications of Tunis (SUP'COM)</p>
+                        <p class="education-location">Tunis, Tunisia</p>
+                        <p class="education-period">2024 – Present</p>
+                        <div class="education-research">
+                            <strong>Research Focus:</strong> Threat Hunting Using Agentic AI – Developing
+                            autonomous multi-agent systems for proactive cybersecurity threat detection and response
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3>Engineering Degree in Computer Science</h3>
+                        <p class="education-focus">Data Science & AI</p>
+                        <p class="education-institution">Central Polytechnic School of Tunis</p>
+                        <p class="education-location">Tunis, Tunisia</p>
+                        <p class="education-period">2021 – 2024</p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3>Bachelor in Computer Science</h3>
+                        <p class="education-institution">Higher Institute of Information and Communication Technologies
+                        </p>
+                        <p class="education-location">Tunis, Tunisia</p>
+                        <p class="education-period">2018 – 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leadership-section">
+                <h3 class="leadership-title">Leadership & Achievements</h3>
+                <div class="leadership-grid">
+                    <div class="leadership-card">
+                        <div class="leadership-icon">🏐</div>
+                        <div class="leadership-content">
+                            <h4> National Volleyball Team, Tunisia</h4>
+                            <p class="leadership-period">2014 – 2018</p>
+                            <p class="leadership-description">
+                                Led national team through competitive tournaments, developing strategic
+                                planning and high-pressure decision-making skills
+                            </p>
+                        </div>
+                    </div>
+                    <div class="leadership-card">
+                        <div class="leadership-icon">🏐</div>
+                        <div class="leadership-content">
+                            <h4> Hammam-lif Senior Volleyball Team</h4>
+                            <p class="leadership-period">2016 – Present</p>
+                            <p class="leadership-description">
+                                Ongoing leadership role fostering team collaboration, strategic thinking,
+                                and performance optimization
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">Ready to bring AI innovation to your organization? Let's connect.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p class="contact-intro">
+                        I'm always interested in discussing new projects, innovative ideas,
+                        or opportunities to be part of your vision. Feel free to reach out
+                        through any of the channels below.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:zarsalene@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>zarsalene@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+21690431500" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>Phone</h4>
+                                <p>+216 90 431 500</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/arsalene-zbidi-0931941b7/" target="_blank"
+                            rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>LinkedIn</h4>
+                                <p>arsalene-zbidi</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h4>Location</h4>
+                                <p>Tunis, Tunisia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <a href="mailto:zarsalene@gmail.com" class="btn btn-primary">Send Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="5"
+                                placeholder="Tell me about your project or inquiry..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="favicon.png" alt="Logo" class="nav-logo-img">
+                        <span class="logo-text">Arsalene Zbidi</span>
+                    </div>
+                    <p class="footer-tagline">
+                        AI Engineer specializing in agentic systems and production ML
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:zarsalene@gmail.com">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/arsalene-zbidi-0931941b7/"
+                                    target="_blank">LinkedIn</a></li>
+                            <li><a href="tel:+21690431500">Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arsalene Zbidi. All rights reserved.</p>
+                <p class="footer-note">Built with precision and passion for AI innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
